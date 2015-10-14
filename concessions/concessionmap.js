@@ -240,7 +240,9 @@ var buildMap = function(){
 	var gjLayer = new L.GeoJSON.AJAX(url_layers[i],{
 	    onEachFeature: onEachFeature,
 	    style: concession_map_style_contract,
-	    //filter: layer_filter
+	});
+	gjLayer.addEventListener('click', function(e){
+	    ga('send', 'event', 'map', 'click_block', e.layer.feature.properties.BlockID);
 	});
 	concession_layers.addLayer(gjLayer);
     }
@@ -283,12 +285,3 @@ var switch_to = function(stylefunc, legendname){
     legends[legendname].addTo(map);
 }
 
-/* trigger google analytics on map click
- */
-
-$(document).ready(function(){
-    $('#map').click(function(){
-	console.log('map clicked');
-	ga('send', 'event', 'map', 'click');
-    });
-});
