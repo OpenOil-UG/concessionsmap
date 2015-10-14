@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-	  <title>Africa Oil Concessions</title>
+	  <title>Open Concession Map</title>
 
 
 	   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
@@ -11,6 +11,12 @@
  <script src="lib/leaflet.ajax.js"></script>
     <!-- bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="concessionmap.css"/>
+
+<!-- fullscreen button -->
+<script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.2/Leaflet.fullscreen.min.js'></script>
+<link href='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.2/leaflet.fullscreen.css' rel='stylesheet' />
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -21,50 +27,10 @@
 	  
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-    <style>
-      html, body {
-              height: 100%;
-        /*margin: 0;
-              padding: 0;*/
-
-      }
-    h2 {
-           padding-bottom: 10px;
-           }
-    body{
-                      padding-top: 10px;
-}
-    p,input {
-       
-
-      line-height: 120%;
-      font-size: 14px;
-           }
-      #map {
-        height: 527px;
-      }
-
-    #map-canvas {
-    width:100%;
-           height:500px;
-    }
-
-
-    /************************************************
-*      4.      Navbar                                                          
-        *
-
-	    
-	Navbar      								*
-************************************************/
-
-
-    
-    </style>
   </head>
   <body>
 
-	  <div class="container">
+	  <div class="container-fluid">
 	 	  <div class="row">
 			  <div class="col-md-1">
  		    <a href="https://openoil.net"><img src="https://openoil.net/wp/wp-content/uploads/2013/11/OpenOil-logo-2.jpg" width="60px"/></a>		    
@@ -84,23 +50,59 @@ Big Oil</a> (<a href="https://www.youtube.com/watch?v=29RQWlalFfs" target="_blan
 	    </div>
 
     <div class="row">
-            <div class="col-md-5">
-          <h2>Concession Blocks</h2>
+            <div class="col-md-2">
+          <h2>Open Concession Map</h2>
 
+<p>Each area on the map is the co-ordinates of an oil or gas "block", "field"
+or "concession" and provides basic information about contractors and
+available <a href="http://repository.openoil.net/wiki/Main_Page">contracts</a> for all 33 countries in Sub-Saharan Africa, for which oil blocks have been
+published.</p>
 
+<p>The map represents the next evolution of the OpenOil concessions database
+and is designed as an open framework to contain further data, such as we
+published in our Open Data Tour for Tanzania, with which we hope to
+contribute to a formal, open data standard around
+<a href="http://openoil.net/2015/05/22/come-and-get-it-openoil-publishes-first-open=
+-api-for-oil-rights"/>extraction rights</a>.</p>
+
+<p>Resources:
+<a href="https://github.com/OpenOil-UG/ukfracking/tree/master/kml">Geodata that made this map</a> (shape files and
+code <a href="https://creativecommons.org/licenses/by-sa/3.0/"> BY-SA license</a> | 
+<a href="http://repository.openoil.net/wiki/Concession_Layer_Methodology">Our
+Methodology and Sources</a>| <a href="http://openoil.net/openoil-api/">OpenOil
+API for oil rights</a> | <a href="http://openoil.net/2014/12/10/the-concession-layer/">Blog: How many
+concession blocks are there in Africa?</a></p>
+
+<p>Keep informed: We will add further countries and data to this map over the
+next weeks: <a href="https://openoil.us9.list-manage.com/subscribe?u=3Df93dde4012236ea543f4c2c9=
+d&id=3D41216014dd">Sign up to stay informed</a></p>
 			 
         </div>
-        <div class="col-md-7">
-		    <input id="searchTextField" type="text" size="50">
+        <div class="col-md-10">
+		    <!--<input id="searchTextField" type="text" size="50">-->
     <div id="map"></div>
 
         </div>
+
+	<div id="single_country_links">
+
+	  <a href="?c=AO">Angola</a>
+	</div>
 
 
 
     </div>
 </div>
 <script src="concessionmap.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-29349823-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </body>
 </html>
