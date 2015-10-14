@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 13",
-        "Block Name": "Block 13",
+        "BlockName": "Block 13",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -136,7 +136,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 30",
-        "Block Name": "Block 30",
+        "BlockName": "Block 30",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -211,7 +211,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 45",
-        "Block Name": "Block 45",
+        "BlockName": "Block 45",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -270,7 +270,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 44",
-        "Block Name": "Block 44",
+        "BlockName": "Block 44",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -345,7 +345,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 29",
-        "Block Name": "Block 29",
+        "BlockName": "Block 29",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -432,7 +432,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 43",
-        "Block Name": "Block 43",
+        "BlockName": "Block 43",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -531,7 +531,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 28",
-        "Block Name": "Block 28",
+        "BlockName": "Block 28",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -638,7 +638,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 27",
-        "Block Name": "Block 27",
+        "BlockName": "Block 27",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -729,7 +729,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 42",
-        "Block Name": "Block 42",
+        "BlockName": "Block 42",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -804,7 +804,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 41",
-        "Block Name": "Block 41",
+        "BlockName": "Block 41",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -851,7 +851,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 26/06",
-        "Block Name": "Block 26/06",
+        "BlockName": "Block 26/06",
         "Company": "Petrobras, BP, Sonangol P&P",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -942,7 +942,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 25/11",
-        "Block Name": "Block 25/11",
+        "BlockName": "Block 25/11",
         "Company": "Total, Sonangol P&P, Statoil, BP",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1013,7 +1013,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 40/11",
-        "Block Name": "Block 40/11",
+        "BlockName": "Block 40/11",
         "Company": "Total, Sonangol P&P, Statoil",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1064,7 +1064,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 24/11",
-        "Block Name": "Block 24/11",
+        "BlockName": "Block 24/11",
         "Company": "BP, Sonangol P&P",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1123,7 +1123,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 39/11",
-        "Block Name": "Block 39/11",
+        "BlockName": "Block 39/11",
         "Company": "Statoil, Sonangol P&P, Total",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1186,7 +1186,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 23",
-        "Block Name": "Block 23",
+        "BlockName": "Block 23",
         "Company": "Maersk Oil & Gas, Svenska, Sonangol P&P",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1261,7 +1261,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 38/11",
-        "Block Name": "Block 38/11",
+        "BlockName": "Block 38/11",
         "Company": "Statoil, Sonangol P&P, China Sonangol",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1328,7 +1328,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 22/11",
-        "Block Name": "Block 22/11",
+        "BlockName": "Block 22/11",
         "Company": "Repsol Angola 22 B.V., Sonangol P&P, Statoil",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1391,7 +1391,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 37/11",
-        "Block Name": "Block 37/11",
+        "BlockName": "Block 37/11",
         "Company": "ConocoPhillips, Sonangol P&P, Repsol",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1434,7 +1434,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 21/09",
-        "Block Name": "Block 21/09",
+        "BlockName": "Block 21/09",
         "Company": "Cobalt, Nazaki Oil & Gas, Sonangol P&P, Alperl Oil",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1493,7 +1493,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 36/11",
-        "Block Name": "Block 36/11",
+        "BlockName": "Block 36/11",
         "Company": "ConocoPhillips, Sonangol P&P",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1568,7 +1568,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 20/11",
-        "Block Name": "Block 20/11",
+        "BlockName": "Block 20/11",
         "Company": "Cobalt, Sonangol P&P, BP",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1639,7 +1639,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 35",
-        "Block Name": "Block 35",
+        "BlockName": "Block 35",
         "Company": "ENI, Sonangol P&P, Repsol",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1710,7 +1710,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 33",
-        "Block Name": "Block 33",
+        "BlockName": "Block 33",
         "Company": "Total, Sonangol P&P, Falcon Oil, GALP",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1813,7 +1813,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 19/11",
-        "Block Name": "Block 19/11",
+        "BlockName": "Block 19/11",
         "Company": "BP, Sonangol P&P, CEPSA",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1900,7 +1900,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 34",
-        "Block Name": "Block 34",
+        "BlockName": "Block 34",
         "Company": "Sonangol P&P, Statoil HYDRO, Petrobras",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -1995,7 +1995,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 50",
-        "Block Name": "Block 50",
+        "BlockName": "Block 50",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -2054,7 +2054,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 49",
-        "Block Name": "Block 49",
+        "BlockName": "Block 49",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -2117,7 +2117,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 48",
-        "Block Name": "Block 48",
+        "BlockName": "Block 48",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -2176,7 +2176,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 47",
-        "Block Name": "Block 47",
+        "BlockName": "Block 47",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -2235,7 +2235,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 46",
-        "Block Name": "Block 46",
+        "BlockName": "Block 46",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -2294,7 +2294,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 12",
-        "Block Name": "Block 12",
+        "BlockName": "Block 12",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -2541,7 +2541,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 11",
-        "Block Name": "Block 11",
+        "BlockName": "Block 11",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -3016,7 +3016,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 10",
-        "Block Name": "Block 10",
+        "BlockName": "Block 10",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -3283,7 +3283,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 9/09",
-        "Block Name": "Block 9/09",
+        "BlockName": "Block 9/09",
         "Company": "Cobalt, Sonangol P&P, Nazaki Oil & Gas, Alperl Oil",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -3554,7 +3554,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 18/06",
-        "Block Name": "Block 18/06",
+        "BlockName": "Block 18/06",
         "Company": "Petrobras, SSI, Sonangol P&P, Falcon Oil, Geminas",
         "Status": "Production",
         "Type": "Offshore",
@@ -3741,7 +3741,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 17/6",
-        "Block Name": "Block 17/6",
+        "BlockName": "Block 17/6",
         "Company": "Total, SSI, Sonangol P&P, Somoil, Falcon Oil, Acrep 17 S.A., Partex",
         "Status": "Production",
         "Type": "Offshore",
@@ -3908,7 +3908,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 32",
-        "Block Name": "Block 32",
+        "BlockName": "Block 32",
         "Company": "Total, Sonangol P&P, SSI 32, Marathon, GALP",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -3991,7 +3991,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 31",
-        "Block Name": "Block 31",
+        "BlockName": "Block 31",
         "Company": "BP, Sonangol P&P, Statoil, Marathon, SSI 31",
         "Status": "Production",
         "Type": "Offshore",
@@ -4094,7 +4094,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 16",
-        "Block Name": "Block 16",
+        "BlockName": "Block 16",
         "Company": "Maersk Oil Angola AS, Sonangol P&P, Odebrecht E&P GmbH (OE&P)",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -4201,7 +4201,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 15/06",
-        "Block Name": "Block 15/06",
+        "BlockName": "Block 15/06",
         "Company": "ENI, SSI, Sonangol P&P, Total, Falcon Oil, Statoil",
         "Status": "Production",
         "Type": "Offshore",
@@ -4280,7 +4280,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 3/05A",
-        "Block Name": "Block 3/05A",
+        "BlockName": "Block 3/05A",
         "Company": "Sonangol P&P, China Sonangol, Ajoco, ENI, Somoil, Naftgas, INA-NAFTA",
         "Status": "Production",
         "Type": "Offshore",
@@ -4383,7 +4383,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 1/06",
-        "Block Name": "Block 1/06",
+        "BlockName": "Block 1/06",
         "Company": null,
         "Status": null,
         "Type": "Offshore",
@@ -4450,7 +4450,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 8",
-        "Block Name": "Block 8",
+        "BlockName": "Block 8",
         "Company": "Maersk Oil & Gas, Svenska, Sonangol P&P",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -4573,7 +4573,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 7",
-        "Block Name": "Block 7",
+        "BlockName": "Block 7",
         "Company": null,
         "Status": "Open",
         "Type": "Offshore",
@@ -4736,7 +4736,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 6/06",
-        "Block Name": "Block 6/06",
+        "BlockName": "Block 6/06",
         "Company": "Petrobras, Sonangol P&P, China Sonangol, Falcon Oil, Initial Oil & Gas",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -5099,7 +5099,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 5/06",
-        "Block Name": "Block 5/06",
+        "BlockName": "Block 5/06",
         "Company": "Vaalco Energy, Sonangol E.P, Sonangol P&P",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -5338,7 +5338,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 4/05",
-        "Block Name": "Block 4/05",
+        "BlockName": "Block 4/05",
         "Company": "Sonangol P&P, Statoil, Somoil, Acrep",
         "Status": "Exploration",
         "Type": "Offshore",
@@ -5681,7 +5681,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 2/05",
-        "Block Name": "Block 2/05",
+        "BlockName": "Block 2/05",
         "Company": "Sonangol P&P, Somoil, Kotoil, Poliedro Oil Co S.A.",
         "Status": "Production",
         "Type": "Offshore",
@@ -6212,7 +6212,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON1",
-        "Block Name": "Block KON1",
+        "BlockName": "Block KON1",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -6515,7 +6515,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON2",
-        "Block Name": "Block KON2",
+        "BlockName": "Block KON2",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -6658,7 +6658,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON4",
-        "Block Name": "Block KON4",
+        "BlockName": "Block KON4",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -6949,7 +6949,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON3",
-        "Block Name": "Block KON3",
+        "BlockName": "Block KON3",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -6996,7 +6996,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON5",
-        "Block Name": "Block KON5",
+        "BlockName": "Block KON5",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7039,7 +7039,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON6",
-        "Block Name": "Block KON6",
+        "BlockName": "Block KON6",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7082,7 +7082,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON7",
-        "Block Name": "Block KON7",
+        "BlockName": "Block KON7",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7137,7 +7137,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON8",
-        "Block Name": "Block KON8",
+        "BlockName": "Block KON8",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7180,7 +7180,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON9",
-        "Block Name": "Block KON9",
+        "BlockName": "Block KON9",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7223,7 +7223,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON10",
-        "Block Name": "Block KON10",
+        "BlockName": "Block KON10",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7274,7 +7274,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON15",
-        "Block Name": "Block KON15",
+        "BlockName": "Block KON15",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7389,7 +7389,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON11",
-        "Block Name": "Block KON11",
+        "BlockName": "Block KON11",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7444,7 +7444,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON12",
-        "Block Name": "Block KON12",
+        "BlockName": "Block KON12",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7487,7 +7487,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON14",
-        "Block Name": "Block KON14",
+        "BlockName": "Block KON14",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7550,7 +7550,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON18",
-        "Block Name": "Block KON18",
+        "BlockName": "Block KON18",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7613,7 +7613,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON13",
-        "Block Name": "Block KON13",
+        "BlockName": "Block KON13",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7656,7 +7656,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON16",
-        "Block Name": "Block KON16",
+        "BlockName": "Block KON16",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7699,7 +7699,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON17",
-        "Block Name": "Block KON17",
+        "BlockName": "Block KON17",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7742,7 +7742,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON21",
-        "Block Name": "Block KON21",
+        "BlockName": "Block KON21",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7833,7 +7833,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON19",
-        "Block Name": "Block KON19",
+        "BlockName": "Block KON19",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7876,7 +7876,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON20",
-        "Block Name": "Block KON20",
+        "BlockName": "Block KON20",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7919,7 +7919,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON22",
-        "Block Name": "Block KON22",
+        "BlockName": "Block KON22",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -7962,7 +7962,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block KON23",
-        "Block Name": "Block KON23",
+        "BlockName": "Block KON23",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -8105,7 +8105,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block CON8",
-        "Block Name": "Block CON8",
+        "BlockName": "Block CON8",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -8264,7 +8264,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block CON3",
-        "Block Name": "Block CON3",
+        "BlockName": "Block CON3",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -8423,7 +8423,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block CON2",
-        "Block Name": "Block CON2",
+        "BlockName": "Block CON2",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -8542,7 +8542,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block CON5",
-        "Block Name": "Block CON5",
+        "BlockName": "Block CON5",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -8641,7 +8641,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block CON4",
-        "Block Name": "Block CON4",
+        "BlockName": "Block CON4",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -8684,7 +8684,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block CON1",
-        "Block Name": "Block CON1",
+        "BlockName": "Block CON1",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -8867,7 +8867,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block CON7",
-        "Block Name": "Block CON7",
+        "BlockName": "Block CON7",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -8934,7 +8934,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block CON6",
-        "Block Name": "Block CON6",
+        "BlockName": "Block CON6",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -9037,7 +9037,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block CON10",
-        "Block Name": "Block CON10",
+        "BlockName": "Block CON10",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -9580,7 +9580,7 @@
       "type": "Feature",
       "properties": {
          "BlockID": "AO/Block CON9",
-        "Block Name": "Block CON9",
+        "BlockName": "Block CON9",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -9759,7 +9759,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Cabina Southern",
-        "Block Name": "Cabina Southern",
+        "BlockName": "Cabina Southern",
         "Company": "Plus Petrol, Sonangol P&P, Force Petroleum LDTE, Cupet",
         "Status": "Exploration",
         "Type": "Onshore",
@@ -9858,7 +9858,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block CC",
-        "Block Name": "Block CC",
+        "BlockName": "Block CC",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -9957,7 +9957,7 @@
       "type": "Feature",
       "properties": {
          "BlockID": "AO/Cabinda Northern",
-        "Block Name": "Cabinda Northern",
+        "BlockName": "Cabinda Northern",
         "Company": "Sonangol P&P, Teikoku, Soco, Acrep S.A., China Sonangol, ENI, Petropars",
         "Status": "Exploration",
         "Type": "Onshore",
@@ -10116,7 +10116,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Cabinda",
-        "Block Name": "Cabinda",
+        "BlockName": "Cabinda",
         "Company": null,
         "Status": null,
         "Type": "Onshore",
@@ -10383,7 +10383,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 0",
-        "Block Name": "Block 0" ,
+        "BlockName": "Block 0" ,
         "Company": "Chevron, Sonangol, Total, ENI",
         "Status": "Production",
         "Type": null,
@@ -10530,7 +10530,7 @@
       "type": "Feature",
       "properties": {
                  "BlockID": "AO/Block 14",
-        "Block Name": "Block 14",
+        "BlockName": "Block 14",
         "Company": "Chevron, Sonangol P&P, ENI, Total, Petrogal",
         "Status": "Production",
         "Type": "Offshore",
