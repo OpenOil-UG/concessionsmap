@@ -1,5 +1,31 @@
 
 
+/* ALL THE COLORS WE TRIED 
+COLOR1 = 'hsla(192, 100%, 75%, 1)';
+COLOR2 = 'hsla(87, 54%, 42%, 1)';
+
+COLOR1 = '#D95F02';
+//COLOR2 = '#1B9E77';
+COLOR1 = '#FC8D62';
+COLOR2 = '#66C2A5';
+
+COLOR1 = '#FC8D62'; // dark
+COLOR1 = '#CC0066'; // PINK!!!
+COLOR1 = '#D63385';
+COLOR1 = '#E066A3';
+COLOR2 = '#7570B3'; // lilac
+COLOR2 = '#66FF33'; // green
+*/
+
+// Daniel's last proposal
+
+COLOR2 = '#5ab4ac';
+
+COLOR2 = '#E066A3'; // lilac
+
+COLOR1 = '#d8b365';
+COLOR2 = '#00FF00';
+
 var map = L.map('map', {
     fullscreenControl: true
 }).setView([4.22, 18.35], 3);
@@ -61,8 +87,8 @@ var build_legend = function(labels){
 }
 
 legends['contract'] = build_legend(
-    [['hsla(192, 100%, 50%, 1)', 'No contract available'],
-     ['#FF0066', 'Contract information available']]
+    [[COLOR1, 'No contract'],
+     [COLOR2, 'Contract']]
 )
 
 legends['company'] = build_legend(
@@ -138,9 +164,9 @@ var addLayer = function(layerid){	  L.tileLayer('https://api.tiles.mapbox.com/v4
 url_layers = choose_layers();
 
 var basestyle = {
-	'color': 'hsla(192, 100%, 50%, 1)',
-	'stroke': 1,
-	'weight': 1,
+    'color': COLOR1,//'hsla(192, 100%, 50%, 1)',
+    'stroke': 1,
+    'weight': 1,
     }
 
 var concession_map_style_contract = function(feature){
@@ -148,7 +174,7 @@ var concession_map_style_contract = function(feature){
 
     if(feature.properties.Contract){
 	//style['color'] =  'hsla(192, 100%, 20%, 1)';
-	style['color'] = '#FF0066';
+	style['color'] = COLOR2;
 	}
     return style
 }
@@ -158,7 +184,7 @@ var concession_map_style_company = function(feature){
 
     if(feature.properties.Contract){
 	//style['color'] =  'hsla(192, 100%, 20%, 1)';
-	style['color'] = '#FF0066';
+	style['color'] = COLOR2;
 	}
     return style
 }
@@ -168,7 +194,7 @@ var concession_map_style_status = function(feature){
 
     if(feature.properties.Status.indexOf('Open') == -1){
 	//style['color'] =  'hsla(192, 100%, 20%, 1)';
-	style['color'] = '#FF0066';
+	style['color'] = COLOR2;
 	}
     return style
 }
