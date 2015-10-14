@@ -3,7 +3,10 @@ html, body {
 }
 
 h2 {
+    margin-top: 0px;
     padding-bottom: 10px;
+    text-align: left;
+    font-size: 26px;
 }
 
 body{
@@ -47,4 +50,21 @@ p,input {
 
 .container-fluid {
     padding: 10px 40px;
+}
+
+.below_map {
+    border: 1px solid;
+    border-top: 0px;
+    padding: 10px;
+}
+
+.leftcolumn {
+    padding: 0hpx 5px 0px 2px;
+
+}
+
+.boxed {
+    border: 1px solid;
+    padding: 5px 10px;
+    margin-bottom: 10px;
 }

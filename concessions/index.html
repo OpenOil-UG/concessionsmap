@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-	  <title>Open Concession Map</title>
+	  <title>Open Oil Concession Map</title>
 
 
 	   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
@@ -47,47 +47,52 @@ Big Oil</a> (<a href="https://www.youtube.com/watch?v=29RQWlalFfs" target="_blan
 <p ><br/>
 
 			  </div>
-	    </div>
+		  </div>
+		  
+<!--		  <div class="row">
+		    <div class="col-md-12">
 
+		    </div>
+		    </div> -->
     <div class="row">
-            <div class="col-md-2">
-          <h2>Open Concession Map</h2>
+            <div class="col-md-2 leftcolumn">
+          <h2>Open Oil Concession Map</h2>
 
-<p>Each area on the map is the co-ordinates of an oil or gas "block", "field"
-or "concession" and provides basic information about contractors and
-available <a href="http://repository.openoil.net/wiki/Main_Page">contracts</a> for all 33 countries in Sub-Saharan Africa, for which oil blocks have been
-published.</p>
+	      
+	  <p>Each area on the map is the co-ordinates of an oil or gas "block", "field" or "concession" and provides basic information about contractors and available <a href="http://repository.openoil.net/wiki/Main_Page">contracts</a>.</p>
 
-<p>The map represents the next evolution of the OpenOil concessions database
-and is designed as an open framework to contain further data, such as we
-published in our Open Data Tour for Tanzania, with which we hope to
-contribute to a formal, open data standard around
-<a href="http://openoil.net/2015/05/22/come-and-get-it-openoil-publishes-first-open=
+	  <p>The map is an open framework to contain further data, such as in the <a href="https://tanzania.openoil.net">Open Data Tour of Tanzania</a>, part of a formal, open data standard around <a href="http://openoil.net/2015/05/22/come-and-get-it-openoil-publishes-first-open=
 -api-for-oil-rights"/>extraction rights</a>.</p>
-
-<p>Resources:
-<a href="https://github.com/OpenOil-UG/ukfracking/tree/master/kml">Geodata that made this map</a> (shape files and
-code <a href="https://creativecommons.org/licenses/by-sa/3.0/"> BY-SA license</a> | 
+<div class="boxed">
+<p><b>Resources</b>:
+<a href="https://github.com/OpenOil-UG/concessionsmap/tree/master/concessions/data">Geodata that made this map</a> (shape files and
+code <a href="https://creativecommons.org/licenses/by-sa/3.0/"> BY-SA license</a>) | 
 <a href="http://repository.openoil.net/wiki/Concession_Layer_Methodology">Our
 Methodology and Sources</a>| <a href="http://openoil.net/openoil-api/">OpenOil
 API for oil rights</a> | <a href="http://openoil.net/2014/12/10/the-concession-layer/">Blog: How many
 concession blocks are there in Africa?</a></p>
+</div>
+<div class="boxed">
+<p><b>Keep informed</b>: We will add further countries and data to this map over the
+next weeks: <a href="https://openoil.us9.list-manage.com/subscribe?u=f93dde4012236ea543f4c2c9d&id=9a7e3ba74d">Sign up to stay informed</a></p>
+</div>
+<div class="boxed">
+<p>
+<b>Feedback</b>: Have thoughts? Found a mistake? <a href="mailto:anton.ruehling@openoil.net">Send us your comments</a>.
+</p>
+</div>
 
-<p>Keep informed: We will add further countries and data to this map over the
-next weeks: <a href="https://openoil.us9.list-manage.com/subscribe?u=3Df93dde4012236ea543f4c2c9=
-d&id=3D41216014dd">Sign up to stay informed</a></p>
 			 
         </div>
         <div class="col-md-10">
 		    <!--<input id="searchTextField" type="text" size="50">-->
-    <div id="map"></div>
-
+		    <div id="map"></div>
+		    <div class="below_map">
+        <b>Individual country maps</b>: 
+	<span id="single_country_links">
+	</span>
         </div>
 
-	<div id="single_country_links">
-
-	  <a href="?c=AO">Angola</a>
-	</div>
 
 
 
