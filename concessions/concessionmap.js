@@ -268,7 +268,14 @@ var buildMap = function(){
 	    style: concession_map_style_contract,
 	});
 	gjLayer.addEventListener('click', function(e){
-	    ga('send', 'event', 'map', 'click_block', e.layer.feature.properties.BlockID);
+	    try{
+		if(e.layer.feature) clicklabel = e.layer.feature.properties.BlockID;
+		else clicklabel = 'unknown block';
+		ga('send', 'event', 'map', 'click_block', clicklabel);
+	    }
+	    catch(err){
+		console.log('unable to track click');
+	    }
 	});
 	concession_layers.addLayer(gjLayer);
     }
