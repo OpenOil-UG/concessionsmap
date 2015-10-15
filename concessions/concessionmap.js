@@ -34,6 +34,18 @@ $(window).on("resize", function() {
     map.invalidateSize();
 }).trigger("resize");
 
+ map.addControl( new L.Control.Search({
+    collapsed: true,
+    wrapper: 'search',
+    url: 'http://nominatim.openstreetmap.org/search?format=json&q={s}',
+    jsonpParam: 'json_callback',
+    propertyName: 'display_name',
+    propertyLoc: ['lat','lon'],
+    autoType: false,
+    //zoom: 10,
+    text: 'Search...'
+}));
+
 filenames = [
     "AO_contracts.geojson",
     "BJ_contracts+.geojson",
@@ -123,7 +135,7 @@ var choose_layers = function(){
 
     var queryDict = {}
     location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]})
-    // no 'c' parameter == return all countries	
+    // no 'c' parameter == return all countries
     if('c' in queryDict){
 	queryDict['c'].toUpperCase().split(',').forEach(
 	    function(n){
@@ -137,7 +149,7 @@ var choose_layers = function(){
 	    filepaths.push('data/' + all_countries[key]);
 	}
     }
-    return filepaths;		
+    return filepaths;
 }
 
 var add_country_links = function(){
@@ -210,13 +222,13 @@ var onEachFeature = function(feature, layer){
 	'BlockName': 'Block Name',
 	'SourceURL': 'Source',
 	'SourceDate': 'Source Date'}
-   
+
     metadata_order = ['BlockName', 'Country', 'Company', 'Status', 'Type', 'Contract', 'SourceURL', 'SourceDate'];
     table_elements = [];
 
     metadata_order.forEach(function(label){
 	display_label = metadata_prettynames[label] || label
-	
+
 	value = feature.properties[label];
 	if(label == 'Country'){
 	    ccod = (feature.properties['BlockID'] || '').split('/')[0];
@@ -229,14 +241,14 @@ var onEachFeature = function(feature, layer){
 	    if(label == 'Contract'){
 		value = '<a href="' + value + '" target="_blank">Available</a>';
 	    }
-	
+
 	    /*if(['SourceURL', 'Contract'].indexOf(label) != -1){
 		//linkify fields that contain links
 		value = '<a href="' + value + '" target="_blank">Available</a>';
 	    }*/
 	    table_elements.push([display_label, value]);
 	}
-	
+
 	else{
 	    table_elements.push([display_label, '']);
 	}
@@ -247,7 +259,7 @@ var onEachFeature = function(feature, layer){
 	table += '<tr><td class="popuplabel">' + e[0] + '</td><td>' + e[1] + '</td></tr>';
     });
     table += '</table>'
-    
+
     layer.bindPopup(table);
 }
 
@@ -280,7 +292,7 @@ var buildMap = function(){
 	});
 	concession_layers.addLayer(gjLayer);
     }
-    
+
     concession_layers.addTo(map);
     if(choose_layers().length == 1){
 	// Hideous hack. layer.getBounds() will only work once the
