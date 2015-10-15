@@ -42,6 +42,7 @@ filenames = [
     "CI.geojson",
     "CM.geojson",
     "ET.geojson",
+    "GA_contracts.geojson",
     "GH_contracts+.geojson",
     "GM_contracts.geojson",
     "GN_contracts+.geojson",
