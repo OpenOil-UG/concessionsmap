@@ -1,6 +1,6 @@
 
 
-/* ALL THE COLORS WE TRIED 
+/* ALL THE COLORS WE TRIED
 COLOR1 = 'hsla(192, 100%, 75%, 1)';
 COLOR2 = 'hsla(87, 54%, 42%, 1)';
 
@@ -163,16 +163,38 @@ var add_country_links = function(){
 }
 $(document).ready(add_country_links);
 
-var addLayer = function(layerid){	  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-    maxZoom: 18,
-    id: layerid,
-    accessToken: 'pk.eyJ1Ijoib3Blbm9pbCIsImEiOiJVbzF0dUtjIn0.0PfhXizZ9_e1nLH1Dgye9A'
-}).addTo(map);
-				}
+// var addLayer = function(layerid){	  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+//     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+//     maxZoom: 18,
+//     id: layerid,
+//     accessToken: 'pk.eyJ1Ijoib3Blbm9pbCIsImEiOiJVbzF0dUtjIn0.0PfhXizZ9_e1nLH1Dgye9A'
+// }).addTo(map);
+// 				}
 
+// ---------------------------------------------------------------------
 
+var mapboxAttribution = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'
+var accessToken = 'pk.eyJ1Ijoib3Blbm9pbCIsImEiOiJVbzF0dUtjIn0.0PfhXizZ9_e1nLH1Dgye9A'
+var mapboxUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}'
 
+var streets   = L.tileLayer(mapboxUrl, {id: 'openoil.nklf1hg4', accessToken: accessToken, attribution: mapboxAttribution}),
+    satellite = L.tileLayer(mapboxUrl, {id: 'openoil.nobc1l70', accessToken: accessToken, attribution: mapboxAttribution});
+
+//var map = L.map('map', {
+//    center: [39.73, -104.99],
+//    zoom: 10,
+//    layers: [grayscale, cities]
+//});
+
+var baseMaps = {
+    "Streets": streets,
+    "Satellite": satellite
+};
+
+baseMaps.Streets.addTo(map);
+L.control.layers(baseMaps).addTo(map);
+
+// ---------------------------------------------------------------------
 
 url_layers = choose_layers();
 
@@ -266,12 +288,12 @@ var onEachFeature = function(feature, layer){
 concession_layers = L.layerGroup();
 
 var buildMap = function(){
-    mapbox_layers = [
-	'openoil.nklf1hg4', // base layer (terrain only)
-    ];
-    for(i=0;i<mapbox_layers.length;i++){
-	addLayer(mapbox_layers[i]);
-    }
+//    mapbox_layers = [
+//	'openoil.nklf1hg4', // base layer (terrain only)
+//    ];
+//    for(i=0;i<mapbox_layers.length;i++){
+//	addLayer(mapbox_layers[i]);
+//    }
 
 
 
@@ -330,4 +352,3 @@ var switch_to = function(stylefunc, legendname){
     }
     legends[legendname].addTo(map);
 }
-
