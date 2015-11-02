@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0">
+
+	  <title>Open Oil Concession Map</title>
+
+    <!-- Leaflet.js -->
+	  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
+    <script src="lib/leaflet.ajax.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="concessionmap.css"/>
+
+    <!-- fullscreen button -->
+    <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.2/Leaflet.fullscreen.min.js'></script>
+    <link href='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.2/leaflet.fullscreen.css' rel='stylesheet' />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Leaflet-Control-Geocoder -->
+    <link rel="stylesheet" href="lib/leaflet-search-1.8.4/dist/leaflet-search.min.css" />
+    <script src="lib/leaflet-search-1.8.4/dist/leaflet-search.min.js"></script>
+
+  </head>
+  <body>
+
+	  <div class="container-fluid">
+
+      <div class="row">
+
+        <div class="col-md-1">
+ 		      <a href="https://openoil.net"><img src="https://openoil.net/wp/wp-content/uploads/2013/11/OpenOil-logo-2.jpg" width="60px"/></a>
+			  </div>
+
+        <div class="col-md-11">
+          <p style="white-space: nowrap;">
+            <a href="http://openoil.net/about-2/" target="_blank">
+              About us
+            </a> |
+            <a href="http://repository.openoil.net/wiki/Main_Page" target="_blank">
+              Contracts repository
+            </a> |
+            <a href="https://openoil-ug.github.io/tanzania/tanzania/en/" target="_blank">
+              Open data tour – Tanzania</a> |
+            <a href="http://openoil.net/contract-modeling/" target="_blank">
+              Public interest financial modeling</a> |
+            <a href="http://openoil.net/openoil-api/" target="_blank">
+              open API of world's oil concessions</a> |
+            <a href="http://openoil.net/corporate-networks/bp-corporate-network/" target="_blank">
+              mapping Big Oil</a>
+            (<a href="https://www.youtube.com/watch?v=29RQWlalFfs" target="_blank">
+              video
+            </a>)
+          </p>
+          <br/>
+			  </div>
+
+		  </div>
+
+      <div class="row">
+
+        <div class="col-md-2 leftcolumn">
+
+          <h2>Open Oil Concession Map</h2>
+
+	        <p>
+            Each area on the map is the co-ordinates of an oil or gas "block", "field" or "concession" and provides basic information about contractors and available <a href="http://repository.openoil.net/wiki/Main_Page">contracts</a>.
+          </p>
+
+	        <p>
+             The map is an open framework to contain further data, such as in the <a href="https://tanzania.openoil.net">Open Data Tour of Tanzania</a>, part of a formal, open data standard around <a href="http://openoil.net/2015/05/22/come-and-get-it-openoil-publishes-first-open=-api-for-oil-rights"/>extraction rights</a>.
+          </p>
+
+          <div class="boxed">
+            <p>
+              <b>Resources</b>:
+              <a href="https://github.com/OpenOil-UG/concessionsmap/">Geodata</a> (<a href="https://github.com/OpenOil-UG/concessionsmap/tree/master/concessions/data">shape files</a> and
+              <a href="https://github.com/OpenOil-UG/concessionsmap/tree/master/concessions/">code</a> <a href="https://creativecommons.org/licenses/by-sa/3.0/"> BY-SA license</a>) |
+              <a href="http://repository.openoil.net/wiki/Concession_Layer_Methodology">Methodology</a> | <a href="http://openoil.net/openoil-api/">OpenOil
+              API for oil rights</a>
+            </p>
+          </div>
+
+          <div class="boxed">
+            <p>
+              <b><a href="https://openoil.us9.list-manage.com/subscribe?u=f93dde4012236ea543f4c2c9d&id=9a7e3ba74d">Sign up to stay informed</a></b>: as we complete the global map
+            </p>
+          </div>
+
+          <div class="boxed">
+            <p>
+              <b><a href="mailto:anton.ruehling@openoil.net">Send us your comments</a></b>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-md-10">
+		    <!--<input id="searchTextField" type="text" size="50">-->
+		      <div id="map"></div>
+		      <div class="below_map">
+            <b>Individual country maps</b>:
+	          <span id="single_country_links"></span>
+          </div>
+        </div>
+      </div>
+
+      <script src="concessionmap.js"></script>
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-29349823-3', 'auto');
+        ga('send', 'pageview');
+      </script>
+
+  </body>
+</html>
