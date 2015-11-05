@@ -34,6 +34,9 @@ $(window).on("resize", function() {
     map.invalidateSize();
 }).trigger("resize");
 
+// rewrite URL to reflect zoom level and map center, useful for sharing a link to a particular map view
+var hash = new L.Hash(map);
+
  map.addControl( new L.Control.Search({
     collapsed: true,
     wrapper: 'search',
