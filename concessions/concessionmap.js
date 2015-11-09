@@ -1,30 +1,6 @@
 
-
-/* ALL THE COLORS WE TRIED
-COLOR1 = 'hsla(192, 100%, 75%, 1)';
-COLOR2 = 'hsla(87, 54%, 42%, 1)';
-
-COLOR1 = '#D95F02';
-//COLOR2 = '#1B9E77';
-COLOR1 = '#FC8D62';
-COLOR2 = '#66C2A5';
-
-COLOR1 = '#FC8D62'; // dark
-COLOR1 = '#CC0066'; // PINK!!!
-COLOR1 = '#D63385';
-COLOR1 = '#E066A3';
-COLOR2 = '#7570B3'; // lilac
-COLOR2 = '#66FF33'; // green
-*/
-
-// Daniel's last proposal
-
-COLOR2 = '#5ab4ac';
-
-COLOR2 = '#E066A3'; // lilac
-
-COLOR1 = '#d8b365';
-COLOR2 = '#00FF00';
+COLOR1 = '#E4B421'; // yellow
+COLOR2 = '#21AC14'; // green
 
 var map = L.map('map', {
     fullscreenControl: true
@@ -163,21 +139,21 @@ var choose_layers = function(){
     location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]})
     // no 'c' parameter == return all countries
     if('c' in queryDict){
-	
+
 	if(queryDict['c'].toUpperCase() == 'MENA'){
-	    
+
 	    for(var i in filenames_mena){
 		filepaths.push('data/' + filenames_mena[i]);
 	    }
 	}
 	else if(queryDict['c'].toUpperCase() == 'SSHA'){
-	    
+
 	    for(var i in filenames_africa){
 		filepaths.push('data/' + filenames_africa[i]);
 	    }
 	}
 
-	
+
 	else {
 	    queryDict['c'].toUpperCase().split(',').forEach(
 		function(n){
@@ -215,7 +191,7 @@ var add_country_form = function(){
     selecttext = '<select class="countryselect">' + links.join(' ') + '</select>';
 
     pretext = '<a href="?">All</a> | <a href="?c=SSHA">Sub-Saharan Africa</a> | <a href="?c=MENA">Middle East and North Africa</a> | By country ';
-    
+
     $('#single_country_links').html(pretext + selecttext);
     $('.countryselect').on('change', function(){
 	window.location = window.location.pathname + "?c=" + $(this).val();
@@ -264,6 +240,7 @@ var basestyle = {
     'color': COLOR1,//'hsla(192, 100%, 50%, 1)',
     'stroke': 1,
     'weight': 1,
+    "fillOpacity": .35
     }
 
 var concession_map_style_contract = function(feature){
