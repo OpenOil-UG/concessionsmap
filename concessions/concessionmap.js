@@ -1,30 +1,8 @@
 
 
-/* ALL THE COLORS WE TRIED
-COLOR1 = 'hsla(192, 100%, 75%, 1)';
-COLOR2 = 'hsla(87, 54%, 42%, 1)';
-
-COLOR1 = '#D95F02';
-//COLOR2 = '#1B9E77';
-COLOR1 = '#FC8D62';
-COLOR2 = '#66C2A5';
-
-COLOR1 = '#FC8D62'; // dark
-COLOR1 = '#CC0066'; // PINK!!!
-COLOR1 = '#D63385';
-COLOR1 = '#E066A3';
-COLOR2 = '#7570B3'; // lilac
-COLOR2 = '#66FF33'; // green
-*/
-
-// Daniel's last proposal
-
-COLOR2 = '#5ab4ac';
-
-COLOR2 = '#E066A3'; // lilac
-
-COLOR1 = '#d8b365';
-COLOR2 = '#00FF00';
+COLOR1 = '#E4B421';
+COLOR2 = '#21AC14';
+COLOR3 = '#B620E3';
 
 var map = L.map('map', {
     fullscreenControl: true
@@ -47,7 +25,8 @@ var hash = new L.Hash(map);
     autoType: false,
     //zoom: 10,
     text: 'Search...'
-}));
+ }));
+
 
 filenames_africa = [
     "AO_contracts.geojson",
@@ -94,6 +73,7 @@ filenames_mena = [
     "IL.geojson",
     "KRG.geojson",
     "LB.geojson",
+    "LY.geojson",
     "MA.geojson",
     "OM.geojson",
     "QA.geojson",
@@ -117,11 +97,15 @@ var build_legend = function(labels){
 	'position': 'bottomright'})
     control.onAdd = function(map){
 	var div = L.DomUtil.create('div', 'info legend');
+	switcher = 'Show <a href="#" class="companyswitcher" id="view_company">companies</a> or <a href="#" class="companyswitcher"  id="view_contract">contracts</a><br/>';
+	div.innerHTML += switcher;
 	for(i=0;i<labels.length;i++){
 	    div.innerHTML += "<i style='background:" + labels[i][0] + "'></i>" + labels[i][1] + "<br/>";
 	}
-    return div;
+	return div;
     }
+
+
     return control
 }
 
@@ -131,15 +115,17 @@ legends['contract'] = build_legend(
 )
 
 legends['company'] = build_legend(
-    [['#ee0000', 'No company known'],
-     ['#0000ee', 'Company information available']]
-)
-legends['status'] = build_legend(
-    [['#ee0000', 'Open'],
-     ['#0000ee', 'Exploration or production']]
+    [[COLOR1, 'No company known'],
+     [COLOR3, 'Company information available']]
 )
 
-legends['contract'].addTo(map);
+/*
+// inactive
+legends['status'] = build_legend(
+    [[COLOR1, 'Open'],
+     [COLOR2, 'Exploration or production']]
+)
+*/
 
 all_countries = {};
 
@@ -195,16 +181,6 @@ var choose_layers = function(){
     return filepaths;
 }
 
-var add_country_links = function(){
-    links = []
-    links.push('<a href="?" >All</a>')
-    for(key in all_countries){
-	links.push('<a href="?c=' + key + '" >' + country_codes[key] + '</a>')
-    }
-    $('#single_country_links').html(links.join(' | '));
-    return links.join()
-}
-
 var add_country_form = function(){
     links = []
     //links.push('<a href="?" >All</a>')
@@ -225,15 +201,6 @@ var add_country_form = function(){
 
 $(document).ready(add_country_form);
 
-// var addLayer = function(layerid){	  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-//     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-//     maxZoom: 18,
-//     id: layerid,
-//     accessToken: 'pk.eyJ1Ijoib3Blbm9pbCIsImEiOiJVbzF0dUtjIn0.0PfhXizZ9_e1nLH1Dgye9A'
-// }).addTo(map);
-// 				}
-
-// ---------------------------------------------------------------------
 
 var mapboxAttribution = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>'
 var accessToken = 'pk.eyJ1Ijoib3Blbm9pbCIsImEiOiJVbzF0dUtjIn0.0PfhXizZ9_e1nLH1Dgye9A'
@@ -264,6 +231,7 @@ var basestyle = {
     'color': COLOR1,//'hsla(192, 100%, 50%, 1)',
     'stroke': 1,
     'weight': 1,
+    'fillOpacity': .35
     }
 
 var concession_map_style_contract = function(feature){
@@ -279,13 +247,13 @@ var concession_map_style_contract = function(feature){
 var concession_map_style_company = function(feature){
     style = JSON.parse(JSON.stringify(basestyle));
 
-    if(feature.properties.Contract){
+    if(feature.properties.Company){
 	//style['color'] =  'hsla(192, 100%, 20%, 1)';
-	style['color'] = COLOR2;
+	style['color'] = COLOR3;
 	}
     return style
 }
-
+/*
 var concession_map_style_status = function(feature){
     style = JSON.parse(JSON.stringify(basestyle));
 
@@ -295,11 +263,12 @@ var concession_map_style_status = function(feature){
 	}
     return style
 }
-
+*/
 
 var layer_filter = function(feature){
     return feature.properties.Contract;
 }
+
 var onEachFeature = function(feature, layer){
 
     metadata_prettynames = {
@@ -413,4 +382,8 @@ var switch_to = function(stylefunc, legendname){
 	}
     }
     legends[legendname].addTo(map);
+    $('#view_company').click(switch_to_company);
+    $('#view_contract').click(switch_to_contracts);
 }
+$(document).ready(switch_to_contracts);
+
