@@ -164,29 +164,3 @@ ul.side-nav > * {
     line-height: 16px !important;
     height: auto !important;
 }
-
-/************************************************
- * Layer switch
- ************************************************/
-
-.switch {
-    display: inline-block;
-}
-
-.switch label {
-    font-size: 15px !important;
-    color: #444 !important;
-}
-
-.lever {
-    margin-left: .5em !important;
-}
-
-.switch label input[type=checkbox]:checked+.lever:after {
-    /*background-color: #0066A7;*/
-    background-color: #0066A7;
-}
-
-.switch label input[type=checkbox]:checked+.lever {
-    background-color: #eeeeee;
-}

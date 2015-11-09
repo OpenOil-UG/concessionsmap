@@ -357,19 +357,4 @@ $(document).ready(function () {
       legends[legendname].addTo(map);
     }
 
-
-
-    /************************************************
-     * Layer switch
-     ************************************************/
-
-    /*
-    $('#layer input').click(function () {
-        if ($(this).prop('checked'))
-           layer.addTo(map);
-        else
-        map.removeLayer(layer);
-    });
-    */
-
 });
