@@ -1,0 +1,192 @@
+html, body {
+    height: 100%;
+}
+
+#menu a.link, #menu td, .switch, .switch label {
+    font-size: 15px !important;
+    line-height: 40px !important;
+    height: 40px !important;
+    color: #444 !important;
+}
+
+/************************************************
+ * Map
+ ************************************************/
+
+#map {
+    background: #ccc;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+/************************************************
+ * Popups
+ ************************************************/
+
+#map .leaflet-popup-content-wrapper {
+    border: .5em solid #0066A7;
+}
+
+#map .leaflet-popup-tip {
+    border-top-color: #0066A7;
+}
+
+#map .leaflet-popup-close-button {
+    top: 7px;
+    right: 7px;
+}
+
+#map .leaflet-popup-content {
+    padding-top: 7px;
+}
+
+#map .popuplabel{
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.leaflet-popup-content td {
+    line-height: 0px;
+}
+/************************************************
+ * Legend
+ ************************************************/
+
+.legend {
+    line-height: 18px;
+    color: hsla(0, 0%, 90%, 1);
+    background-color: hsla(0, 0%, 1%, 0.8);
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+
+/************************************************
+ * Menu
+ ************************************************/
+
+#toggle-menu {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    padding: 0 1em;
+    z-index: 2;
+}
+
+ul.side-nav > * {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#menu h2 {
+    font-size: 20px;
+    margin: 1.5em 0 .5em;
+    line-height: 1em;
+    clear: both;
+}
+
+/************************************************
+ * Logo
+ ************************************************/
+
+.brand-logo {
+    height: 57px;
+    margin: 1em 0 3em;
+    padding: 0 !important;
+}
+
+.brand-logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+/************************************************
+ * Links
+ ************************************************/
+
+#menu a.link {
+    margin: 0 -15px !important;
+}
+
+#menu a.link:hover {
+    background: #eee;
+}
+
+/************************************************
+ * Key
+ ************************************************/
+
+#menu td {
+    padding: 0;
+    color: rgb(68, 68, 68);
+    vertical-align: middle;
+}
+
+#menu td img {
+    vertical-align: middle;
+}
+
+/************************************************
+ * Search
+ ************************************************/
+
+#search {
+    height: 1em;
+}
+
+.search-input, .search-input:focus {
+    width: 200px !important;
+    padding: .5em !important;
+    border: 1px solid #aaa !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.search-tooltip {
+    background: #fff !important;
+    max-width: 225px !important;
+    top: 300% !important;
+}
+
+.search-tip {
+    background: #fff !important;
+    padding: .5em 1em !important;
+    white-space: pre-wrap !important;
+    line-height: 16px !important;
+    height: auto !important;
+}
+
+/************************************************
+ * Layer switch
+ ************************************************/
+
+.switch {
+    display: inline-block;
+}
+
+.switch label {
+    font-size: 15px !important;
+    color: #444 !important;
+}
+
+.lever {
+    margin-left: .5em !important;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    /*background-color: #0066A7;*/
+    background-color: #0066A7;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #eeeeee;
+}
