@@ -56,8 +56,9 @@ $(document).ready(function () {
      * Data
      ************************************************/
 
-    COLOR1 = '#d8b365';
-    COLOR2 = '#00FF00';
+    COLOR1 = '#E4B421';
+    COLOR2 = '#21AC14';
+    COLOR3 = '#B620E3';
 
     filenames_africa = [
         "AO_contracts.geojson",
@@ -76,6 +77,7 @@ $(document).ready(function () {
         "GW.geojson",
         "KE_contracts+.geojson",
         "LR_contracts+.geojson",
+	"LY.geojson",
         "MG.geojson",
         "ML.geojson",
         "MR_contracts.geojson",
@@ -142,7 +144,7 @@ $(document).ready(function () {
 
     legends['company'] = build_legend(
         [['#ee0000', 'No company known'],
-         ['#0000ee', 'Company information available']]
+         ['#0000ee', 'Open block or no company known']]
     )
     legends['status'] = build_legend(
         [['#ee0000', 'Open'],
