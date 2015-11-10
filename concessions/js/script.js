@@ -137,6 +137,7 @@ $(document).ready(function () {
         return control
     }
 
+
     legends['contract'] = build_legend(
         [[COLOR1, 'No contract available'],
          [COLOR2, 'Full contract available']]
@@ -363,25 +364,57 @@ $(document).ready(function () {
     $('#with-company').on('click', switch_to_company);
     $('#with-contract').on('click', switch_to_contracts);
 
-
-    // country chooser
-    var add_country_form = function(){
+    var country_select = function(){
 	links = []
+	links.push('<option value="" disabled selected></option>');
+	regions = {
+	    'All': '',
+	    'Middle East and North Africa': 'MENA',
+	    'Sub-Saharan Africa': 'SSHA'
+	}
+	for(key in regions){
+	    links.push('<option value="' + regions[key] + '">' + key + '</option>');
+	}
+	    
+	
 	for(key in all_countries){
             links.push('<option value="' + key + '">' + country_codes[key] + '</option>')
 
 	}
 	selecttext = '<select class="countryselect">' + links.join(' ') + '</select>';
+	return selecttext;
+    }
 
+    // country chooser
+    var add_country_form = function(element){
+	selecttext = country_select();
 	pretext = '<a href="?">All</a> | <a href="?c=SSHA">Sub-Saharan Africa</a> | <a href="?c=MENA">Middle East and North Africa</a> | By country ';
-    
-	$('#single_country_links').html(pretext + selecttext);
+	element.html(selecttext);
 	$('.countryselect').on('change', function(){
             window.location = window.location.pathname + "?c=" + $(this).val();
 	});
-	return links.join()
+
     }
-    add_country_form();
+    add_country_form($('#single_country_links'));
+
+    
+/*    var build_country_chooser = function(){
+	console.log('building country chooser');
+	control = L.control({
+	    'position': 'bottomleft'})
+	control.onAdd = function(map){
+	    var div = L.DomUtil.create('div', 'info legend');
+	    //div.innerHTML = country_select();
+	    console.log(country_select());
+	    div.innerHTML = 'dropdown' + country_select();
+	    return div;
+	}
+	control.addTo(map)
+	return control;
+    }
+    build_country_chooser();
+*/
+    $('select').material_select();
 
 
 });
