@@ -331,18 +331,6 @@ $(document).ready(function () {
 
     buildMap();
 
-    var switch_to_contracts = function(){
-      return switch_to(concession_map_style_contract, 'contract');
-    }
-
-    var switch_to_company = function(){
-      return switch_to(concession_map_style_company, 'company');
-    }
-
-    var switch_to_status = function(){
-      return switch_to(concession_map_style_status, 'status');
-    }
-
     var switch_to = function(stylefunc, legendname){
       concession_layers.eachLayer(
         function(layer){
@@ -358,5 +346,42 @@ $(document).ready(function () {
 
       legends[legendname].addTo(map);
     }
+
+    
+    var switch_to_contracts = function(){
+      return switch_to(concession_map_style_contract, 'contract');
+    }
+
+    var switch_to_company = function(){
+      return switch_to(concession_map_style_company, 'company');
+    }
+
+    var switch_to_status = function(){
+      return switch_to(concession_map_style_status, 'status');
+    }
+
+    $('#with-company').on('click', switch_to_company);
+    $('#with-contract').on('click', switch_to_contracts);
+
+
+    // country chooser
+    var add_country_form = function(){
+	links = []
+	for(key in all_countries){
+            links.push('<option value="' + key + '">' + country_codes[key] + '</option>')
+
+	}
+	selecttext = '<select class="countryselect">' + links.join(' ') + '</select>';
+
+	pretext = '<a href="?">All</a> | <a href="?c=SSHA">Sub-Saharan Africa</a> | <a href="?c=MENA">Middle East and North Africa</a> | By country ';
+    
+	$('#single_country_links').html(pretext + selecttext);
+	$('.countryselect').on('change', function(){
+            window.location = window.location.pathname + "?c=" + $(this).val();
+	});
+	return links.join()
+    }
+    add_country_form();
+
 
 });
