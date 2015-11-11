@@ -144,8 +144,8 @@ $(document).ready(function () {
     )
 
     legends['company'] = build_legend(
-        [['#ee0000', 'No company known'],
-         ['#0000ee', 'Open block or no company known']]
+        [[COLOR1, 'No company known'],
+         [COLOR2, 'Open block or no company known']]
     )
     legends['status'] = build_legend(
         [['#ee0000', 'Open'],
@@ -228,10 +228,8 @@ $(document).ready(function () {
 
     var concession_map_style_company = function(feature){
         style = JSON.parse(JSON.stringify(basestyle));
-
-        if(feature.properties.Contract){
-    	//style['color'] =  'hsla(192, 100%, 20%, 1)';
-    	style['color'] = COLOR2;
+        if(feature.properties.Company){
+    	    style['color'] = COLOR2;
     	}
         return style
     }
@@ -240,7 +238,6 @@ $(document).ready(function () {
         style = JSON.parse(JSON.stringify(basestyle));
 
         if(feature.properties.Status.indexOf('Open') == -1){
-    	//style['color'] =  'hsla(192, 100%, 20%, 1)';
     	style['color'] = COLOR2;
     	}
         return style
@@ -333,9 +330,9 @@ $(document).ready(function () {
     buildMap();
 
     var switch_to = function(stylefunc, legendname){
-      concession_layers.eachLayer(
-        function(layer){
-          layer.setStyle(stylefunc);
+	concession_layers.eachLayer(
+            function(layer){
+		layer.setStyle(stylefunc);
         }
       );
 
@@ -361,9 +358,19 @@ $(document).ready(function () {
       return switch_to(concession_map_style_status, 'status');
     }
 
-    $('#with-company').on('click', switch_to_company);
+    /*$('#with-company').on('click', switch_to_company);
     $('#with-contract').on('click', switch_to_contracts);
+    */
+    $('[name=viewswitcher]').change(function(){
+	console.log('company switcher');
+	if($(this).attr('id') == 'show-company'){
+	    switch_to_company();}
+	else{
+	    switch_to_contracts();
+	}
 
+    });
+					 
     var country_select = function(){
 	links = []
 	links.push('<option value="" disabled selected></option>');
