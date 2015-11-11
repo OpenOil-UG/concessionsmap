@@ -144,8 +144,8 @@ $(document).ready(function () {
     )
 
     legends['company'] = build_legend(
-        [[COLOR1, 'No company known'],
-         [COLOR2, 'Open block or no company known']]
+        [[COLOR1, 'Open block or no company known'],
+         [COLOR2, 'Company known']]
     )
     legends['status'] = build_legend(
         [['#ee0000', 'Open'],
@@ -189,7 +189,14 @@ $(document).ready(function () {
     		filepaths.push('data/' + filenames_africa[i]);
     	    }
     	}
+    	else if(queryDict['c'].toUpperCase() == 'ALL'){
 
+    	    for(var i in filenames){
+    		filepaths.push('data/' + filenames[i]);
+    	    }
+    	}
+
+	    
 
     	else {
     	    queryDict['c'].toUpperCase().split(',').forEach(
@@ -362,7 +369,6 @@ $(document).ready(function () {
     $('#with-contract').on('click', switch_to_contracts);
     */
     $('[name=viewswitcher]').change(function(){
-	console.log('company switcher');
 	if($(this).attr('id') == 'show-company'){
 	    switch_to_company();}
 	else{
@@ -372,30 +378,39 @@ $(document).ready(function () {
     });
 					 
     var country_select = function(){
-	links = []
-	links.push('<option value="" disabled selected></option>');
+	mainlinks = [];
+	toplinks = [];
+	toplinks.push('<option value="" disabled selected></option>');
 	regions = {
-	    'All': '',
+	    'All': 'ALL',
 	    'Middle East and North Africa': 'MENA',
 	    'Sub-Saharan Africa': 'SSHA'
 	}
 	for(key in regions){
-	    links.push('<option value="' + regions[key] + '">' + key + '</option>');
+	    toplinks.push('<option value="' + regions[key] + '">' + key + '</option>');
 	}
-	    
+
+	sorted_countries = Object.keys(all_countries).sort(
+	    function(a,b){return all_countries[a] - all_countries[b]}
+	);
+	sorted_countries = [];
+	for(var i in all_countries){
+	    console.log(i);
+	    sorted_countries.push([country_codes[i], i])}
+	sorted_countries.sort();
 	
-	for(key in all_countries){
-            links.push('<option value="' + key + '">' + country_codes[key] + '</option>')
+	for(i in sorted_countries){
+            mainlinks.push('<option value="' + sorted_countries[i][1] + '">' + sorted_countries[i][0] + '</option>');
 
 	}
-	selecttext = '<select class="countryselect">' + links.join(' ') + '</select>';
+	selecttext = '<select class="countryselect">' + toplinks.concat(mainlinks).join(' ') + '</select>';
 	return selecttext;
     }
 
     // country chooser
     var add_country_form = function(element){
 	selecttext = country_select();
-	pretext = '<a href="?">All</a> | <a href="?c=SSHA">Sub-Saharan Africa</a> | <a href="?c=MENA">Middle East and North Africa</a> | By country ';
+	pretext = '<a href="?c=">All</a> | <a href="?c=SSHA">Sub-Saharan Africa</a> | <a href="?c=MENA">Middle East and North Africa</a> | By country ';
 	element.html(selecttext);
 	$('.countryselect').on('change', function(){
             window.location = window.location.pathname + "?c=" + $(this).val();
@@ -405,22 +420,6 @@ $(document).ready(function () {
     add_country_form($('#single_country_links'));
 
     
-/*    var build_country_chooser = function(){
-	console.log('building country chooser');
-	control = L.control({
-	    'position': 'bottomleft'})
-	control.onAdd = function(map){
-	    var div = L.DomUtil.create('div', 'info legend');
-	    //div.innerHTML = country_select();
-	    console.log(country_select());
-	    div.innerHTML = 'dropdown' + country_select();
-	    return div;
-	}
-	control.addTo(map)
-	return control;
-    }
-    build_country_chooser();
-*/
     $('select').material_select();
 
 
