@@ -19,11 +19,28 @@
 
       <h2>Concession Map</h2>
 
+
+      <div class="input-field">
+	
+	<div id="single_country_links"></div>
+	<label>View country or region</label>
+      </div>
+      <div class="input-field">
+	<div id="search"></div>
+      </div>
+        <div class="input-field">
+ <form action="#">
+      <input name="viewswitcher" type="radio" id="show-contracts" checked="checked" />
+      <label for="show-contracts">Blocks with Contracts</label>
+      <input name="viewswitcher" type="radio" id="show-company" />
+      <label for="show-company">Blocks with Companies</label>
+ </form>
+ </div>
+
+<h2> Read More </h2>
+      
       <a class="link modal-trigger" href="#modal-about-map">
         About the Map
-      </a>
-      <a class="link" href="http://openoil.net/about-2/" target="_blank">
-        About us
       </a>
       <a class="link" href="http://repository.openoil.net/wiki/Main_Page" target="_blank">
         Contracts repository
@@ -39,28 +56,6 @@
       <a class="link" href="https://www.youtube.com/watch?v=29RQWlalFfs" target="_blank">
         Video
       </a>
-
-      <h2>Search</h2>
-      <div class="input-field">
-	
-	<div id="single_country_links"></div>
-	<label>View country or region</label>
-      </div>
-      <div class="input-field">
-	<div id="search"></div>
-      </div>
-
-      <h2>Highlights</h2>
- <form action="#">
-    <p>
-      <input name="viewswitcher" type="radio" id="show-contracts" checked="checked" />
-      <label for="show-contracts">Blocks with Contracts</label>
-    </p>
-    <p>
-      <input name="viewswitcher" type="radio" id="show-company" />
-      <label for="show-company">Blocks with Companies</label>
-    </p>
-  </form>
 
 
 
@@ -110,10 +105,17 @@
           <p>
             <b><a href="mailto:anton.ruehling@openoil.net">Send us your comments</a></b>
           </p>
+<p>
+	        <a class="link" href="http://openoil.net/about-2/" target="_blank">
+        About us
+      </a>
+</p>
         </div>
 
     </div>
-    <div class="modal-footer">
+<div class="modal-footer">
+
+  
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
     </div>
   </div>
