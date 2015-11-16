@@ -2,12 +2,18 @@ html, body {
     height: 100%;
 }
 
+
+#menu .multilink a {
+    display: inline;
+}
+
 #menu a.link, #menu td, .switch, .switch label {
     font-size: 15px !important;
-    line-height: 40px !important;
+    /*line-height: 40px !important;*/
     height: 40px !important;
     color: #444 !important;
 }
+
 
 /************************************************
  * Map
@@ -47,7 +53,9 @@ html, body {
 }
 
 .leaflet-popup-content td {
-    line-height: 0px;
+    /*line-height: 10px;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 /************************************************
  * Legend
