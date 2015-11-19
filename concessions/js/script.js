@@ -118,7 +118,12 @@ $(document).ready(function () {
         "YE.geojson",
     ];
 
-    filenames = filenames_mena.concat(filenames_africa);
+    filenames_asia = [
+	"IN.geojson",
+	"KH.geojson",
+	]
+
+    filenames = filenames_mena.concat(filenames_africa).concat(filenames_asia);
 
     country_codes = {"KRG": "Kurdistan",
 		     "AEA": "Abu Dhabi",
@@ -179,19 +184,26 @@ $(document).ready(function () {
         // no 'c' parameter == return all countries
         if('c' in queryDict){
 
-    	if(queryDict['c'].toUpperCase() == 'MENA'){
+    	    if(queryDict['c'].toUpperCase() == 'MENA'){
 
-    	    for(var i in filenames_mena){
-    		filepaths.push('data/' + filenames_mena[i]);
+    		for(var i in filenames_mena){
+    		    filepaths.push('data/' + filenames_mena[i]);
+    		}
     	    }
-    	}
-    	else if(queryDict['c'].toUpperCase() == 'SSHA'){
+    	    else if(queryDict['c'].toUpperCase() == 'SSHA'){
+		
+    		for(var i in filenames_africa){
+    		    filepaths.push('data/' + filenames_africa[i]);
+    		}
+    	    }
+    	    else if(queryDict['c'].toUpperCase() == 'ASIA'){
 
-    	    for(var i in filenames_africa){
-    		filepaths.push('data/' + filenames_africa[i]);
+    		for(var i in filenames_asia){
+    		    filepaths.push('data/' + filenames_asia[i]);
+    		}
     	    }
-    	}
-    	else if(queryDict['c'].toUpperCase() == 'ALL'){
+
+    	    else if(queryDict['c'].toUpperCase() == 'ALL'){
 
     	    for(var i in filenames){
     		filepaths.push('data/' + filenames[i]);
@@ -386,7 +398,8 @@ $(document).ready(function () {
 	regions = {
 	    'All': 'ALL',
 	    'Middle East and North Africa': 'MENA',
-	    'Sub-Saharan Africa': 'SSHA'
+	    'Sub-Saharan Africa': 'SSHA',
+	    'Asia': 'ASIA'
 	}
 	for(key in regions){
 	    toplinks.push('<option value="' + regions[key] + '">' + key + '</option>');
