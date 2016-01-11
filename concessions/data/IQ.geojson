@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+                                                                                
+"features": [
+{ "type": "Feature", "properties": { "Id": 0, "BlockID": "IQ\/Block 8 Iraq", "BlockName": "Block 8 Iraq", "Status": "PPL-Operated", "Type": "Onshore", "SourceURL": "http:\/\/www.ppl.com.pk\/content\/exploration-activity-map", "SourceDate": "31\/03\/2015", "Contract": null, "Timestamp": "24\/11\/2015", "Company": "PPL" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 44.86563, 33.99898 ], [ 45.26181, 33.79911 ], [ 45.75793, 33.53499 ], [ 45.76507, 33.31013 ], [ 45.93282, 33.29228 ], [ 45.93996, 33.17093 ], [ 45.79005, 33.09954 ], [ 45.79362, 32.93536 ], [ 45.56519, 32.92465 ], [ 45.56876, 32.7569 ], [ 45.48667, 32.7569 ], [ 45.23326, 32.93179 ], [ 45.24396, 33.21733 ], [ 45.27966, 33.21733 ], [ 45.27252, 33.38151 ], [ 44.92631, 33.38151 ], [ 44.90846, 33.742 ], [ 44.56225, 33.742 ], [ 44.86563, 33.99898 ] ] ] } }
+]
+}
