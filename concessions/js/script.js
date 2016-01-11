@@ -104,6 +104,7 @@ $(document).ready(function () {
         "DZ.geojson",
         "EG.geojson",
         "IL.geojson",
+	"IQ.geojson",
         "KRG.geojson",
         "LB.geojson",
 	"LY.geojson",
@@ -119,8 +120,22 @@ $(document).ready(function () {
     ];
 
     filenames_asia = [
+	"AZ.geojson",
+	"BD.geojson",
+	"BN.geojson",
+	"CN.geojson",
+	"ID.geojson",
 	"IN.geojson",
 	"KH.geojson",
+	"KZ.geojson",
+	"KR.geojson",
+	"MM.geojson",
+	"MY.geojson",
+	"PG.geojson",
+	"PK.geojson",
+	"TL.geojson",
+	"TM.geojson",
+	"VN.geojson",
 	]
 
     filenames = filenames_mena.concat(filenames_africa).concat(filenames_asia);
