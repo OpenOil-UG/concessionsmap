@@ -137,15 +137,14 @@ $(document).ready(function () {
 	"TL.geojson",
 	"TM.geojson",
 	"VN.geojson",
-	'SR.geojson',
-
     ]
 
-    filenames_latin_america = [
-	]
+    filenames_south_central_america = [
+	"SR.geojson",
+    ]
 
     filenames = filenames_mena.concat(filenames_africa).concat(
-	filenames_asia).concat(filenames_latin_america);
+	filenames_asia).concat(filenames_south_central_america);
 
     country_codes = {"KRG": "Kurdistan",
 		     "AEA": "Abu Dhabi",
@@ -206,6 +205,13 @@ $(document).ready(function () {
         location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]})
         // no 'c' parameter == return all countries
         if('c' in queryDict){
+
+    	    if(queryDict['c'].toUpperCase() == 'SCAM'){
+
+    		for(var i in filenames_mena){
+    		    filepaths.push('data/' + filenames_south_central_america[i]);
+    		}
+    	    }
 
     	    if(queryDict['c'].toUpperCase() == 'MENA'){
 
@@ -422,6 +428,7 @@ $(document).ready(function () {
 	    'All': 'ALL',
 	    'Middle East and North Africa': 'MENA',
 	    'Sub-Saharan Africa': 'SSHA',
+	    'South and Central America': 'SCAM',
 	    'Asia': 'ASIA'
 	}
 	for(key in regions){
