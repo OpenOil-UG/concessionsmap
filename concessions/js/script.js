@@ -130,17 +130,23 @@ $(document).ready(function () {
 	"KZ.geojson",
 	"KR.geojson",
 	"MM.geojson",
+	"MN.geojson",
 	"MTJ.geojson",
 	"MY.geojson",
 	"PG.geojson",
+	"PH.geojson",
 	"PK.geojson",
+	"TH.geojson",
 	"TL.geojson",
 	"TM.geojson",
 	"VN.geojson",
     ]
 
     filenames_south_central_america = [
+	"BB.geojson",
+	"JM.geojson",
 	"SR.geojson",
+	"TT.geojson",
     ]
 
     filenames = filenames_mena.concat(filenames_africa).concat(
